@@ -34,3 +34,9 @@ class CreatePokemonForm(forms.Form):
     type = forms.CharField(widget=forms.Select(choices=TYPES), label="What type is your Pokémon?")
     type2 = forms.CharField(widget=forms.Select(choices=TYPES), label="What is your other type?")
 
+    def clean(self):
+        cleaned_data = super().clean()
+
+        if cleaned_data['type'] == cleaned_data['type2']:
+            self.add_error('type2', 'Type 2 cannot be the same as Type 1!')
+        return cleaned_data
