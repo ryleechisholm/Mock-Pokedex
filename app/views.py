@@ -11,7 +11,9 @@ def root(request):
             weight = form['weight']
             region = form['region']
             description = form['description']
-            pokemon = [creator, name, type, height, weight, region, description]
+            type = form['type']
+            type2 = form['type2']
+            pokemon = [creator, name, type, height, weight, region, description, type, type2]
             return render(request, "root.html", {"form": form,"pokemon":pokemon})
     else:
         form = CreatePokemonForm()
