@@ -18,3 +18,9 @@ def root(request):
     else:
         form = CreatePokemonForm()
     return render(request, "root.html", {"form":form})
+
+def main(request):
+    return render(request, "dex.html")
+
+def pokemon(request):
+    return render(request, "singe_poke.html")
