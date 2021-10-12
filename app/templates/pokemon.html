@@ -2,6 +2,9 @@
 <h1>{{ pokemon_name }}</h1>
 {% endblock title %} {% block content %}
 <body>
-  pokéstats
+    <form action="{% url 'pokemon' %}" method="GET">
+        {{ form.as_p }}
+    <form>
+    Pokéstats
 </body>
 {% endblock content %}
