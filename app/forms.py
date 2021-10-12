@@ -1,36 +1,34 @@
 from django import forms
-from django.db.models.deletion import SET_DEFAULT
-from django.forms.fields import GenericIPAddressField
-from app.models import Settings
+
+TYPES = [('grass','Grass'),
+    ('fire','Fire'), 
+    ('water','Water'), 
+    ('flying','Flying'),
+    ('dragon','Dragon'), 
+    ('steel','Steel'), 
+    ('ghost','Ghost'), 
+    ('dark','Dark'),
+    ('psychic','Psychic'),
+    ('fighting','Fighting'),
+    ('normal','Normal'),
+    ('bug','Bug'),
+    ('poison','Poison'), 
+    ('rock','Rock'),
+    ('ground','Ground'), 
+    ('electric','Electric'), 
+    ('fairy','Fairy'), 
+    ('ice','Ice'), ]
 
 class CreatePokemonForm(forms.Form):
-    creator = forms.CharField(min_length=0,max_length=50, required=True)
-    name = forms.CharField(min_length=0,max_length=30, required=True)
-    grass = forms.BooleanField(required=False)
-    fire = forms.BooleanField(required=False)
-    water = forms.BooleanField(required=False)
-    flying = forms.BooleanField(required=False)
-    dragon = forms.BooleanField(required=False)
-    steel = forms.BooleanField(required=False)
-    ghost = forms.BooleanField(required=False)
-    dark = forms.BooleanField(required=False)
-    psychic = forms.BooleanField(required=False)
-    fighting = forms.BooleanField(required=False)
-    normal = forms.BooleanField(required=False)
-    bug = forms.BooleanField(required=False)
-    poison = forms.BooleanField(required=False)
-    rock = forms.BooleanField(required=False)
-    ground = forms.BooleanField(required=False)
-    electric = forms.BooleanField(required=False)
-    fairy = forms.BooleanField(required=False)
-    ice = forms.BooleanField(required=False)
-    height = forms.IntegerField(min_value=0, required=True)
-    weight = forms.IntegerField(min_value=0, required=True)
-    region = forms.CharField(min_length=0,max_length=30, required=True)
-    description = forms.CharField(min_length=0,max_length=200, required=True)
-
-    class Meta:
-        model = Settings
+    Creator = forms.CharField(min_length=0, max_length=100, required=True)
+    name = forms.CharField(min_length=0, max_length=100, required=True)
+    height = forms.IntegerField(min_value=1, max_value=60, required=True)
+    weight = forms.IntegerField(min_value=1, required=True)
+    region = forms.CharField(min_length=0, max_length=500, required=True)
+    description = forms.CharField(min_length=0, max_length=1000, required=True)
+    type = forms.CharField(widget=forms.Select(choices=TYPES))
+    type2 = forms.CharField(widget=forms.Select(choices=TYPES))
 
 
+    
 
