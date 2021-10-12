@@ -2,7 +2,7 @@
 <h1>Create Your Pokémon!</h1>
 {% endblock title %} {% block content %}
   <body>
-    <form action="{% url 'root' %}" method="GET">
+    <form action="{% url 'create' %}" method="GET">
         {{ form.as_p }}
         <button>Create Pocket Monster</button>
     <form>
