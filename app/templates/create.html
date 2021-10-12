@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block title %}
+<h1>Create Your Pokémon!</h1>
+{% endblock title %} {% block content %}
+  <body>
+    <form action="{% url 'root' %}" method="GET">
+        {{ form.as_p }}
+        <button>Create Pocket Monster</button>
+    <form>
+    {% if pokemon is not None %}
+    <p>{{ pokemon }}</p>
+    {% endif %}
+  </body>
+{% endblock content %}
