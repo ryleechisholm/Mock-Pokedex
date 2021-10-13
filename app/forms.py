@@ -1,4 +1,4 @@
-from django import forms
+ from django import forms
 
 TYPES = [('--Choose One--',
     (
@@ -28,15 +28,18 @@ class CreatePokemonForm(forms.Form):
     Creator = forms.CharField(widget=forms.TextInput(attrs={'placeholder': ' Your Name', 'style': 'width: 300px;'}), min_length=0, max_length=100, required=True, label="What is your Name?")
     name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Your Pokémon Name', 'style': 'width: 300px;'}), min_length=0, max_length=100, required=True, label="What would you like to name your Pokémon?")
     height = forms.IntegerField(widget=forms.TextInput(attrs={'placeholder': 'Pokémon Height', 'style': 'width: 300px;'}), min_value=1, max_value=60, required=True, label="How tall is your Pokémon?")
-    weight = forms.IntegerField(widget=forms.TextInput(attrs={'placeholder': 'Pokémon Weight', 'style': 'width: 300px;'}), min_value=1, required=True, label="How much does you Pokémon weight?")
+    weight = forms.IntegerField(widget=forms.TextInput(attrs={'placeholder': 'Pokémon Weight', 'style': 'width: 300px;'}), min_value=1, required=True, label="How much does your Pokémon weight?")
     region = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Pokémon Birth Region', 'style': 'width: 300px;'}), min_length=0, max_length=500, required=True, label="What region is your Pokémon from?")
     description = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Pokémon Description', 'style': 'width: 300px;'}), min_length=0, max_length=1000, required=True, label="Describe your Pokémon.")
-    type = forms.CharField(widget=forms.Select(choices=TYPES), label="What type is your Pokémon?")
-    type2 = forms.CharField(widget=forms.Select(choices=TYPES), label="What is your other type?")
+    type = forms.CharField(label="What type is your Pokémon?", widget=forms.Select(choices=TYPES, attrs={'placeholder': 'Pokémon Description', 'style': 'width: 300px;'}), )
+    type2 = forms.CharField(label="What is your other type?", widget=forms.Select(choices=TYPES, attrs={'placeholder': 'Pokémon Description', 'style': 'width: 300px;'}) )
 
+    
     def clean(self):
         cleaned_data = super().clean()
 
         if cleaned_data['type'] == cleaned_data['type2']:
             self.add_error('type2', 'Type 2 cannot be the same as Type 1!')
         return cleaned_data
+
+
