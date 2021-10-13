@@ -3,5 +3,6 @@ import app.views
 urlpatterns = [
     path('create', app.views.create, name="create"),
     path('', app.views.main, name="main"),
-    path('pokemon/', app.views.pokemon, name="pokemon")
+    path('', views.dex, name="dex"),
+    path('entry/<pokemon>', views.entry, name="entry")
 ]
