@@ -1,13 +1,88 @@
 {% extends 'base.html' %} {% block title %}
-<h1>Create Your Pokémon!</h1>
-{% endblock title %} {% block content %}
-  <body>
+<h1>Please Create your Pokémon!</h1>
     <form action="{% url 'create' %}" method="GET">
-        {{ form.as_p }}
-        <button>Create Pocket Monster</button>
-    <form>
-    {% if pokemon is not None %}
-    <p>{{ pokemon }}</p>
-    {% endif %}
+      {{ form.as_p }}
+      <div class="container">
+        <div class="btn">
+          <button class="shop-now">Create your Pokémon!</button>
+          <div class="snowflake-grid to-left">
+            <div class="snowflake-item border-bottom border-right">
+              <div class="sub-items border-right border-bottom pull-down">
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-bottom border-left">
+              <div
+                class="
+                  sub-items
+                  border-right border-bottom
+                  r-90
+                  pull-down-right
+                "
+              >
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-top border-right">
+              <div
+                class="sub-items border-right border-bottom r-270 pull-right"
+              >
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-top border-left">
+              <div class="sub-items border-right border-bottom r-180 pull-left">
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="snowflake-grid to-right">
+            <div class="snowflake-item border-bottom border-right">
+              <div class="sub-items border-right border-bottom pull-down">
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-bottom border-left">
+              <div
+                class="
+                  sub-items
+                  border-right border-bottom
+                  r-90
+                  pull-down-right
+                "
+              >
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-top border-right">
+              <div
+                class="sub-items border-right border-bottom r-270 pull-right"
+              >
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+            <div class="snowflake-item border-top border-left">
+              <div class="sub-items border-right border-bottom r-180 pull-left">
+                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <a href="images/poke1.jpeg"
+      ><img src="images/poke1.jpeg" alt="pokemon"
+    /></a>
+    {% if creatorname is not None %}
+    <p>
+      Your Name: {{ creatorname }} Your Pokémon Name: {{ name }} Pokémon Type:
+      {{ type }} Pokémon's Second Type: {{ type2 }} Pokémon Height: {{height}}
+      Pokémon Weight: {{ weight }} Pokémon Region: {{ region }} Pokémon
+      Description: {{ description }} You have successfully created your pokémon!
+      {% endif %}
+    </p>
+  </body>
+</html>
+
   </body>
 {% endblock content %}
