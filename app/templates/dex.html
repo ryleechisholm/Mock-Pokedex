@@ -1,11 +1,11 @@
 {% extends 'base.html' %} {% block title %}
-<h1>Pokédex</h1>
+<title>Pokédex</title>
 {% endblock title %} {% block content %}
 <body>
-    <ul>
-      {% for poke in Pokemon %}
-      <a href="entry/{{poke}}"><h1>{{poke}}</h1></a>
-      {% endfor %}
-    </ul>
+  <ul>
+    {% for poke in Pokemon %}
+    <a href="entry/{{poke}}"><h1>{{poke}}</h1></a>
+    {% endfor %}
+  </ul>
 </body>
 {% endblock content %}
