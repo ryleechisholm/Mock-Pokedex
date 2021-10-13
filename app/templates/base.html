@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <title>Pokédex</title>
   </head>
+
   <body>
-    {% block title %} {% endblock title %}{% block content%} 
-    {% endblock content%}
+    <nav class="sticky">
+      <a href="/">Pokédex</a>
+      <a href="{%url 'create'%}">Create a Pokémon</a>
+    </nav>
+    <div>{% block content%} {%endblock content%}</div>
   </body>
 </html>
