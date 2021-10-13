@@ -1,10 +1,33 @@
 body {
   background-image: linear-gradient(red, rgb(255, 115, 0), rgb(255, 187, 0));
   background-position: fixed;
-  margin-left: 4em;
-  margin-top: 1em;
-  padding: 2em;
+  margin-left: 2em;
   align-content: center;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+nav {
+  background-color: linear-gradient(black, red);
+  overflow: hidden;
+}
+
+nav {
+  display: block;
+  margin: 0em;
+}
+
+nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
 }
 
 h1 {
@@ -63,7 +86,7 @@ select,
   align-items: center;
 
   width: 220px;
-  height: 60px;
+  height: 80px;
 
   background-color: var(--light-theme);
   cursor: pointer;
@@ -71,11 +94,10 @@ select,
   color: var(--color);
   transition: all 0.3s;
   position: relative;
-
   text-align: center;
   overflow: hidden;
 
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 6px 30px -10px rgba(#cccccc, 1);
 }
 .btn:hover {
@@ -85,7 +107,7 @@ select,
 .shop-now {
   position: relative;
   background-color: transparent;
-  border: transparent;
+  border: 3px solid transparent;
 }
 .santa-icon {
   position: absolute;
