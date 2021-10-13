@@ -2,9 +2,10 @@
 <h1>Pokédex</h1>
 {% endblock title %} {% block content %}
 <body>
-    <form action="{% url 'main' %}" method="GET">
-        {{ form.as_p }}
-    <form>
-    buncha clickable pokey boys(and girls) go here
+    <ul>
+      {% for poke in Pokemon %}
+      <a href="entry/{{poke}}"><h1>{{poke}}</h1></a>
+      {% endfor %}
+    </ul>
 </body>
 {% endblock content %}
