@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}
+<title>Pokédex</title>
+{% endblock title %} {% block content %}
+<body>
+  <form action="{% url 'poketype' %}" method="GET">
+    {{ form.as_p }}
+    <button>Search Type</button>
+  </form>
+  <ul class="listofpoke">
+    {% for poke, link in type_list.items %}
+    <a href="entry/{{poke}}">
+      <div class="card2">
+        <h1>{{poke}}</h1>
+        <img src="{{link}}" /></div
+    ></a>
+    {% endfor %}
+  </ul>
+</body>
+{% endblock content %}

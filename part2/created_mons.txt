@@ -1,0 +1,665 @@
+
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
+<input type="text" name="creator" value="Jacktheripper" placeholder=" Your Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_creator"> - <input type="text" name="name" value="Ditto 2" placeholder="Your Pokémon Name" style="width: 300px;" maxlength="100" minlength="0" required id="id_name"> - <input type="text" name="height" value="6" placeholder="Pokémon Height" style="width: 300px;" required id="id_height"> - <input type="text" name="weight" value="9" placeholder="Pokémon Weight" style="width: 300px;" required id="id_weight"> - <input type="text" name="region" value="Mine" placeholder="Pokémon Birth Region" style="width: 300px;" maxlength="500" minlength="0" required id="id_region"> - <input type="text" name="description" value="Kirby.  Fat pink bitch with an oral fixation." placeholder="Pokémon Description" style="width: 300px;" maxlength="1000" minlength="0" required id="id_description"> - <select name="type" placeholder="Pokémon Description" style="width: 300px;" id="id_type">
+  <optgroup label="--Choose One--">
+  <option value="grass">Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying" selected>Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select> - <select name="type2" placeholder="Pokémon Description" style="width: 300px;" id="id_type2">
+  <optgroup label="--Choose One--">
+  <option value="grass" selected>Grass</option>
+
+  <option value="fire">Fire</option>
+
+  <option value="water">Water</option>
+
+  <option value="flying">Flying</option>
+
+  <option value="dragon">Dragon</option>
+
+  <option value="steel">Steel</option>
+
+  <option value="ghost">Ghost</option>
+
+  <option value="dark">Dark</option>
+
+  <option value="psychic">Psychic</option>
+
+  <option value="fighting">Fighting</option>
+
+  <option value="normal">Normal</option>
+
+  <option value="bug">Bug</option>
+
+  <option value="poison">Poison</option>
+
+  <option value="rock">Rock</option>
+
+  <option value="ground">Ground</option>
+
+  <option value="electric">Electric</option>
+
+  <option value="fairy">Fairy</option>
+
+  <option value="ice">Ice</option>
+
+  <option value="none">None</option>
+
+  </optgroup>
+</select>
