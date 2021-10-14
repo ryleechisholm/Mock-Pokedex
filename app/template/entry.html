@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<body>
+  <div class="card">
+    <ul class="poketype">
+      <h1>{{ pokemon_name }}</h1>
+      {% for poke, data in Pokemon.items %} {% if poke == pokemon %}
+      <h1 class="name">{{data.name}}</h1>
+      <br />
+      <p class="height">Height: {{data.height}}m</p>
+      <br />
+      <p class="weight">Weight: {{data.weight}}kg</p>
+      <br />
+      <p class="desc">{{data.description}}</p>
+      <br />
+      <p class="region">{{data.region}} Region</p>
+      <br />
+      <p class="types">{{data.type1}} Type</p>
+      {% if type2 is not None %}
+      <br />
+      <p class="types">{{data.type2}} Type</p>
+      {% endif %} {% endif %} {% endfor %}
+    </ul>
+  </div>
+</body>
+{% endblock content %}
