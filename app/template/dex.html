@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %}
+<title>Pokédex</title>
+{% endblock title %} {% block content %}
+<body>
+  <form action="/" method="GET">
+    {{ form.as_p }}
+    <button>Search Type</button>
+  </form>
+  {% if filter %} 
+  <ul class="listofpoke">
+  {% for poke in type_list %}
+  {% for pokemon, link in Pokemon_links.items %} 
+  {% if poke == pokemon %}
+  <a href="entry/{{pokemon}}">
+    <div class="card2">
+      <h1>{{pokemon}}</h1>
+      <img src="{{link}}" /></div></a>
+      {% endif %} {% endfor %} {% endfor %}
+  {% else %}
+  <ul class="listofpoke">
+    {% for poke, link in Pokemon_links.items %}
+    <a href="entry/{{poke}}">
+      <div class="card2">
+        <h1>{{poke}}</h1>
+        <img src="{{link}}" /></div
+    ></a>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</body>
+{% endblock content %}
