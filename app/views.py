@@ -95,10 +95,10 @@ Pokemon = {
     "Raichu": Gen_1("Raichu", 0.8, 30.0, "Kanto", "Its long tail serves as a ground to protect itself from its own high-voltage power.", "Electric", None),
     "Sandshrew": Gen_1("Sandshrew", 0.6, 12.0, "Kanto", "It loves to bathe in teh grit of dry, sandy areas.  By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.", "Ground", None),
     "Sandslash": Gen_1("Sandslash", 1.0, 29.5, "Kanto","The drier the area Sandslash lives in, the harder and smoother the Pokémon's spikes will feel when touched.", "Ground", None),
-    "Nidoran_female": Gen_1("Nidoran_female", 0.4, 7.0, "Kanto", "Females are more sensitive to smells than males.  While foraging, they'll use their whiskers to check wind direction and stay downwind of predators.", "Poison", None),
+    "Nidoran (F)": Gen_1("Nidoran (F)", 0.4, 7.0, "Kanto", "Females are more sensitive to smells than males.  While foraging, they'll use their whiskers to check wind direction and stay downwind of predators.", "Poison", None),
     "Nidorina": Gen_1("Nidorina", 0.8, 20.0, "Kanto", "The horn in its head has atrophied.  Its thought that this happens so nidorina's children won't get poked while their mother is feeding them.", "Poison", None),
     "Nidoqueen": Gen_1("Nidoqueen", 1.3, 60.0, "Kanto", "Nidoqueen is better at defense than offense.  With scales like armor, this Pokémon will shield its children from any kind of attack.", "Poison", "Ground"),
-    "Nidoran_male": Gen_1("Nidoran_male", 0.5, 9.0, "Kanto", "The horn on a male Nidoran's forehead contains a powerful poison.  This is a very cautious Pokémon, always straining its large ears.", "Poison", None),
+    "Nidoran (M)": Gen_1("Nidoran (M)", 0.5, 9.0, "Kanto", "The horn on a male Nidoran's forehead contains a powerful poison.  This is a very cautious Pokémon, always straining its large ears.", "Poison", None),
     "Nidorino": Gen_1("Nidorino", 0.9, 19.5, "Kanto", "With a horn that's harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.", "Poison", None),
     "Nidoking": Gen_1("Nidoking" ,1.4, 62.0, "Kanto", "When it goes on a rampage, its impossible to control, but in the presence of Nidoqueen its lived with for a long time, Nidoking calms down.", "Poison", "Ground"),
     "Clefairy": Gen_1("Clefairy", 0.6, 7.5, "Kanto", "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.", "Fairy", None),
@@ -249,10 +249,10 @@ Pokemon_links = {
     "Raichu": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
     "Sandshrew": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
     "Sandslash": "https://pokestop.io/img/pokemon/sandslash-256x256.png",
-    "Nidoran_female": "https://cdn2.bulbagarden.net/upload/8/81/029Nidoran.png",
+    "Nidoran (F)": "https://cdn2.bulbagarden.net/upload/8/81/029Nidoran.png",
     "Nidorina": "https://cdn2.bulbagarden.net/upload/c/cd/030Nidorina.png",
     "Nidoqueen": "https://cdn2.bulbagarden.net/upload/thumb/b/bf/031Nidoqueen.png/250px-031Nidoqueen.png",
-    "Nidoran_male": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
+    "Nidoran (M)": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
     "Nidorino": "https://cdn2.bulbagarden.net/upload/9/9f/033Nidorino.png",
     "Nidoking": "https://cdn2.bulbagarden.net/upload/thumb/c/c6/034Nidoking.png/250px-034Nidoking.png",
     "Clefairy": "https://cdn2.bulbagarden.net/upload/thumb/f/f4/035Clefairy.png/250px-035Clefairy.png",
@@ -373,4 +373,3 @@ Pokemon_links = {
     "Mewtwo": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
     "Mew": "https://cdn2.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png"
 }
-    
