@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<body>
+  <div class="card">
+    <ul class="poketype">
+      {% for data in Created_mon %} {% if data.name == pokemon %}
+      <h1 class="name">{{data.name}}</h1>
+      <br />
+      <p class="creator">Created by: {{data.Creator}}</p>
+      <br />
+      <p class="height">Height: {{data.height}}m</p>
+      <br />
+      <p class="weight">Weight: {{data.weight}}kg</p>
+      <br />
+      <p class="desc">{{data.description}}</p>
+      <br />
+      <p class="region">{{data.region}} Region</p>
+      <br />
+      <p class="types">{{data.type1}} Type</p>
+      {% if data.type2 is not None %}
+      <br />
+      <p class="types">{{data.type2}} Type</p>
+      {% endif %} {% endif %} {% endfor %}
+    </ul>
+  </div>
+</body>
+{% endblock content %}
