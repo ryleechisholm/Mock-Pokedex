@@ -22,17 +22,6 @@ p {
   box-shadow: 5px 10px rgb(136, 1, 1);
 }
 
-.card2 {
-  align-content: center;
-  background-color: rgb(63, 0, 0);
-  font-size: 2em;
-  padding: 1em;
-  border: double red;
-  margin: 2em;
-  height: 100%;
-  width: 300px;
-}
-
 .pokemondex {
   margin-top: 40px;
 }
@@ -71,8 +60,26 @@ p {
 }
 
 .listofpoke {
-  -webkit-columns: 3;
-  -moz-columns: 3;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  align-content: center;
+  background-color: rgb(63, 0, 0);
+  font-size: 2em;
+  padding: 1em;
+  border: double red;
+  margin: 1em;
+  height: 400px;
+  width: 300px;
+  margin-top: 2em;
+}
+
+.pokepic {
+  height: 250px;
+  width: 250px;
 }
 
 .sticky {
