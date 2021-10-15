@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from app.forms import CreatePokemonForm, TypeForm
-from app import models
+from app.models import Created_mon, create_mon
 
 
 def create(request):
@@ -15,20 +15,27 @@ def create(request):
             description = form.cleaned_data['description']
             type1 = form.cleaned_data['type1']       
             type2 = form.cleaned_data['type2']
-            creation = models.create_mon(creator, name, height, weight, region, description, type1, type2)
+            creation = create_mon(creator, name, height, weight, region, description, type1, type2)
             return render(request, "create.html", {"form": form, "creation": creation})
     else:
         form=CreatePokemonForm()
     return render(request, "create.html", {"form":form})
 
+
 def entry(request, pokemon):
     context = {
         "pokemon": pokemon,
-        "Pokemon": Pokemon
+        "Pokemon": Pokemon,
     }
     return render(request, "entry.html", context)
         
 
+def user_entry(request, pokemon):
+    context = {
+        "pokemon": pokemon,
+        "Created_mon": Created_mon.objects.all()
+    }
+    return render(request, "user_entry.html", context)
 
 def dex(request):
     if request.GET:
@@ -44,13 +51,15 @@ def dex(request):
                  "type_list": type_list,
                  "filter": True,
                  "form": form,
+                 "Created_mon": Created_mon.objects.all()
                  }
     else:
         form = TypeForm()
         context = {
             "form": form,
             "Pokemon_links": Pokemon_links,
-            "filter": False
+            "filter": False,
+            "Created_mon": Created_mon.objects.all()
             }
     return render(request, "dex.html", context)
 
@@ -64,6 +73,7 @@ class Gen_1:
         self.description = description
         self.type1 = type1
         self.type2 = type2
+
 
 
 Pokemon = {
@@ -159,7 +169,7 @@ Pokemon = {
     "Shellder": Gen_1("Shellder", 0.3, 4.0, "Kanto", "It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast.", "Water", None),
     "Cloyster": Gen_1("Cloyster", 1.5, 132.5, "Kanto", "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.", "Water", "Ice"),
     "Gastly": Gen_1("Gastly", 1.3, 0.1, "Kanto", "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.", "Ghost", "Poison"),
-    "Hunter": Gen_1("Haunter", 1.6, 0.1, "Kanto", "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.", "Ghost", "Poison"),
+    "Haunter": Gen_1("Haunter", 1.6, 0.1, "Kanto", "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes.", "Ghost", "Poison"),
     "Gengar": Gen_1("Gengar", 1.5, 40.5, "Kanto", "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar’s doing.", "Ghost", "Poison"),
     "Onix": Gen_1("Onix", 8.8, 210.0, "Kanto", "As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid.", "Rock", "Ground"),
     "Drowzee": Gen_1("Drowzee", 1.0, 32.4, "Kanto", "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past.","Psychic", None),
