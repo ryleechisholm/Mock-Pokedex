@@ -22,22 +22,22 @@
       {% endif %} {% endfor %} {% endfor %}
   {% else %}
   <ul class="listofpoke">
+    {% for poke in Created_mon %}
+      <a href="user-entry/{{poke.name}}">
+        <div class="card2">
+          <h1>{{poke.name}}</h1>
+          <div class="pokepic">
+            <img src="https://i.pinimg.com/originals/95/d5/cd/95d5cded00f3a3e8a98fb1eed568aa9f.png">
+          </div>
+        </div>
+      </a>c
+    {% endfor %}
     {% for poke, link in Pokemon_links.items %}
     <a href="entry/{{poke}}">
       <div class="card2">
         <h1>{{poke}}</h1>
         <div class="pokepic">
           <img src="{{link}}" />
-        </div>
-      </div>
-    </a>
-    {% endfor %}
-    {% for poke in Created_mon %}
-    <a href="user-entry/{{poke.name}}">
-      <div class="card2">
-        <h1>{{poke.name}}</h1>
-        <div class="pokepic">
-          <img src="https://i.pinimg.com/originals/95/d5/cd/95d5cded00f3a3e8a98fb1eed568aa9f.png">
         </div>
       </div>
     </a>
