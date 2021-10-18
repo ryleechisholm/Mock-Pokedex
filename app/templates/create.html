@@ -24,18 +24,10 @@
       {{ form.as_p }}
       <div class="container">
         <div class="btn">
-          <button class="shop-now"><a href="#popup1">
+          <button class="shop-now">
             <a href="{%url 'create'%}">Create your Pokémon!</a>
-          </button></a>
-              <div id="popup1" class="overlay">
-                <div class="popup">
-                  <h2>You have created your pokemon!!</h2>
-                  <a class="close" href="#">&times;</a>
-                  <div class="content">
-                    Go check out the pokedex and you'll see your pokemon!
-                  </div>
-                </div>
-              </div>
+          </button>
+              
           <div class="snowflake-grid to-left">
             <div class="snowflake-item border-bottom border-right">
               <div class="sub-items border-right border-bottom pull-down">
@@ -100,7 +92,9 @@
           </div>
         </div>
       </div>
-     
-
+      {% if creation %} 
+      <p>Good job!</p>
+      {% endif %}
   </body>
 </html>
+
